@@ -20,8 +20,8 @@ pipeline {
         label 'master'
       }
       steps {
-        deleteDir()
-        checkout scm
+             sh "echo 'Run Static Code Analysis'"
+
       }
     }
 
@@ -31,9 +31,8 @@ pipeline {
         label 'master'
       }
       steps {
-        deleteDir()
-        checkout scm
-        sh "echo 'Run Static Code Analysis'"
+             sh "echo 'Run Static Code Analysis'"
+
       }
     }
 
@@ -43,9 +42,8 @@ pipeline {
         label 'master'
       }
       steps {
-        deleteDir()
-        checkout scm
-        sh "echo 'Run Unit Tests'"
+               sh "echo 'Run Static Code Analysis'"
+
       }
     }
 
@@ -55,8 +53,7 @@ pipeline {
         label 'master'
       }
       steps {
-        deleteDir()
-        checkout scm
+      
         sh "echo 'Run Acceptance Tests'"
       }
     }
